@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d61f3a41-69fe-4156-b11a-784163ac1e6c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Controller/LuckyController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/LuckyController.php" afterPath="$PROJECT_DIR$/src/Controller/LuckyController.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -67,10 +66,10 @@
       <file leaf-file-name="LuckyController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Controller/LuckyController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+            <state relative-caret-position="136">
+              <caret line="8" column="40" lean-forward="false" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
               <folding>
-                <element signature="e#34#80#0#PHP" expanded="true" />
+                <element signature="e#34#91#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -212,7 +211,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7753000" />
+    <option name="totallyTimeSpent" value="8071000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="85" y="-8" width="1843" height="1096" extended-state="6" />
@@ -375,10 +374,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/LuckyController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        <state relative-caret-position="136">
+          <caret line="8" column="40" lean-forward="false" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
           <folding>
-            <element signature="e#34#80#0#PHP" expanded="true" />
+            <element signature="e#34#91#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
