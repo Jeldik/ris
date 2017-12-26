@@ -2,6 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d61f3a41-69fe-4156-b11a-784163ac1e6c" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/Lucky/number.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/LuckyController.php" afterPath="$PROJECT_DIR$/src/Controller/LuckyController.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -58,19 +62,52 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
               <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+              <folding>
+                <marker date="1514321149976" expanded="true" signature="70:341" ph="{&quot;php&quot;: &quot;^7.1.3&quot;...}" />
+                <marker date="1514321149976" expanded="true" signature="461:467" ph="{...}" />
+                <marker date="1514321149976" expanded="true" signature="483:586" ph="{&quot;sort-packages&quot;: true...}" />
+                <marker date="1514321149976" expanded="true" signature="514:549" ph="{&quot;*&quot;: &quot;dist&quot;...}" />
+                <marker date="1514321149976" expanded="true" signature="604:668" ph="{...}" />
+                <marker date="1514321149976" expanded="true" signature="623:662" ph="{&quot;App\&quot;: &quot;src/&quot;...}" />
+                <marker date="1514321149976" expanded="true" signature="690:763" ph="{...}" />
+                <marker date="1514321149976" expanded="true" signature="709:757" ph="{&quot;App\Tests\&quot;: &quot;tests/&quot;...}" />
+                <marker date="1514321149976" expanded="true" signature="780:1080" ph="{...}" />
+                <marker date="1514321149976" expanded="true" signature="806:937" ph="{&quot;cache:clear&quot;: &quot;symfony-cmd&quot;...}" />
+                <marker date="1514321149976" expanded="true" signature="967:1006" ph="[...]" />
+                <marker date="1514321149976" expanded="true" signature="1098:1136" ph="{&quot;symfony/symfony&quot;: &quot;*&quot;...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LuckyController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Controller/LuckyController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="20" column="5" lean-forward="false" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+              <folding>
+                <element signature="e#34#91#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LuckyController.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Controller/LuckyController.php">
+      <file leaf-file-name="number.html.twig" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/Lucky/number.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="40" lean-forward="false" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
-              <folding>
-                <element signature="e#34#91#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="0">
+              <caret line="0" column="42" lean-forward="false" selection-start-line="0" selection-start-column="42" selection-end-line="0" selection-end-column="42" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -96,6 +133,7 @@
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/src/Controller/LuckyNumber.php" />
         <option value="$PROJECT_DIR$/src/Controller/LuckyController.php" />
+        <option value="$PROJECT_DIR$/templates/Lucky/number.html.twig" />
       </list>
     </option>
   </component>
@@ -157,18 +195,13 @@
             <path>
               <item name="ris" type="b2602c69:ProjectViewProjectNode" />
               <item name="ris" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="config" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="templates" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="ris" type="b2602c69:ProjectViewProjectNode" />
               <item name="ris" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="ris" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ris" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Controller" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="templates" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Lucky" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -179,6 +212,11 @@
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.debug" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\ris\templates\Lucky" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -211,7 +249,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8071000" />
+    <option name="totallyTimeSpent" value="8854000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="85" y="-8" width="1843" height="1096" extended-state="6" />
@@ -301,7 +339,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1514321149976" expanded="true" signature="70:341" ph="{&quot;php&quot;: &quot;^7.1.3&quot;...}" />
+            <marker date="1514321149976" expanded="true" signature="461:467" ph="{...}" />
+            <marker date="1514321149976" expanded="true" signature="483:586" ph="{&quot;sort-packages&quot;: true...}" />
+            <marker date="1514321149976" expanded="true" signature="514:549" ph="{&quot;*&quot;: &quot;dist&quot;...}" />
+            <marker date="1514321149976" expanded="true" signature="604:668" ph="{...}" />
+            <marker date="1514321149976" expanded="true" signature="623:662" ph="{&quot;App\&quot;: &quot;src/&quot;...}" />
+            <marker date="1514321149976" expanded="true" signature="690:763" ph="{...}" />
+            <marker date="1514321149976" expanded="true" signature="709:757" ph="{&quot;App\Tests\&quot;: &quot;tests/&quot;...}" />
+            <marker date="1514321149976" expanded="true" signature="780:1080" ph="{...}" />
+            <marker date="1514321149976" expanded="true" signature="806:937" ph="{&quot;cache:clear&quot;: &quot;symfony-cmd&quot;...}" />
+            <marker date="1514321149976" expanded="true" signature="967:1006" ph="[...]" />
+            <marker date="1514321149976" expanded="true" signature="1098:1136" ph="{&quot;symfony/symfony&quot;: &quot;*&quot;...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -368,17 +419,46 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
-          <folding />
+          <folding>
+            <marker date="1514321149976" expanded="true" signature="70:341" ph="{&quot;php&quot;: &quot;^7.1.3&quot;...}" />
+            <marker date="1514321149976" expanded="true" signature="461:467" ph="{...}" />
+            <marker date="1514321149976" expanded="true" signature="483:586" ph="{&quot;sort-packages&quot;: true...}" />
+            <marker date="1514321149976" expanded="true" signature="514:549" ph="{&quot;*&quot;: &quot;dist&quot;...}" />
+            <marker date="1514321149976" expanded="true" signature="604:668" ph="{...}" />
+            <marker date="1514321149976" expanded="true" signature="623:662" ph="{&quot;App\&quot;: &quot;src/&quot;...}" />
+            <marker date="1514321149976" expanded="true" signature="690:763" ph="{...}" />
+            <marker date="1514321149976" expanded="true" signature="709:757" ph="{&quot;App\Tests\&quot;: &quot;tests/&quot;...}" />
+            <marker date="1514321149976" expanded="true" signature="780:1080" ph="{...}" />
+            <marker date="1514321149976" expanded="true" signature="806:937" ph="{&quot;cache:clear&quot;: &quot;symfony-cmd&quot;...}" />
+            <marker date="1514321149976" expanded="true" signature="967:1006" ph="[...]" />
+            <marker date="1514321149976" expanded="true" signature="1098:1136" ph="{&quot;symfony/symfony&quot;: &quot;*&quot;...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/LuckyController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="40" lean-forward="false" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
+        <state relative-caret-position="340">
+          <caret line="20" column="5" lean-forward="false" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
           <folding>
             <element signature="e#34#91#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/Lucky/number.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="42" lean-forward="false" selection-start-line="0" selection-start-column="42" selection-end-line="0" selection-end-column="42" />
+          <folding />
         </state>
       </provider>
     </entry>
