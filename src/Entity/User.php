@@ -1,6 +1,6 @@
 <?php
 
-namespace AppBundle\Entity;
+namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
@@ -9,7 +9,7 @@ use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * @ORM\Table(name="user")
- * @ORM\Entity(repositoryClass="AppBundle\Repository\UserRepository")
+ * @ORM\Entity(repositoryClass="App\Repository\UserRepository")
  * @UniqueEntity(fields="email", message="Tento e-mail je již zaregistrován, zkuste jiný")
  * @UniqueEntity(fields="userName", message="Tento uživatel je již zaregistrován, zkuste jiné jméno.")
  */

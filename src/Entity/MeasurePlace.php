@@ -1,6 +1,6 @@
 <?php
 
-namespace AppBundle\Entity;
+namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
  * MeasurePlace
  *
  * @ORM\Table(name="measure_place")
- * @ORM\Entity(repositoryClass="AppBundle\Repository\MeasurePlaceRepository")
+ * @ORM\Entity(repositoryClass="App\Repository\MeasurePlaceRepository")
  */
 class MeasurePlace
 {
