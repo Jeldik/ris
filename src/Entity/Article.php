@@ -36,11 +36,9 @@ class Article
         return $this->id;
     }
 
-    public function setTitle(string $title): Article
+    public function setTitle(string $title): void
     {
         $this->title = $title;
-
-        return $this;
     }
 
     public function getTitle(): string
@@ -48,11 +46,9 @@ class Article
         return $this->title;
     }
 
-    public function setContent(string $content): Article
+    public function setContent(string $content): void
     {
         $this->content = $content;
-
-        return $this;
     }
 
     public function getContent(): string
@@ -60,11 +56,9 @@ class Article
         return $this->content;
     }
 
-    public function setUrl(string $url)
+    public function setUrl(string $url): void
     {
         $this->url = $url;
-
-        return $this;
     }
 
     public function getUrl(): string
@@ -72,42 +66,19 @@ class Article
         return $this->url;
     }
 
-    /**
-     * Set description
-     *
-     * @param string $description
-     *
-     * @return Articles
-     */
-    public function setDescription($description)
+    public function setDescription(string $description): void
     {
         $this->description = $description;
-
-        return $this;
     }
 
-    /**
-     * Get description
-     *
-     * @return string
-     */
-    public function getDescription()
+    public function getDescription(): string
     {
         return $this->description;
     }
 
-    /**
-     * Set keywords
-     *
-     * @param string $keywords
-     *
-     * @return Articles
-     */
-    public function setKeywords($keywords)
+    public function setKeywords(string $keywords): void
     {
         $this->keywords = $keywords;
-
-        return $this;
     }
 
     /**

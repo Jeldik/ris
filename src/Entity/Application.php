@@ -34,11 +34,9 @@ class Application
         return $this->id;
     }
 
-    public function setKeywords(string $keywords): Application
+    public function setKeywords(string $keywords): void
     {
         $this->keywords = $keywords;
-
-        return $this;
     }
 
     public function getKeywords(): string
@@ -46,11 +44,9 @@ class Application
         return $this->keywords;
     }
 
-    public function setDescription(string $description): Application
+    public function setDescription(string $description): void
     {
         $this->description = $description;
-
-        return $this;
     }
 
     public function getDescription(): string

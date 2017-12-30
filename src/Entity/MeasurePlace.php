@@ -5,90 +5,48 @@ namespace App\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * MeasurePlace
- *
  * @ORM\Table(name="measure_place")
  * @ORM\Entity(repositoryClass="App\Repository\MeasurePlaceRepository")
  */
 class MeasurePlace
 {
     /**
-     * @var int
-     *
-     * @ORM\Column(name="id", type="integer")
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="AUTO")
+     * @ORM\Column(name="id", type="integer")
      */
     private $id;
 
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="road_number", type="string", length=255, nullable=true)
-     */
+    /** @ORM\Column(name="road_number", type="string", nullable=true) */
     private $roadNumber;
 
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="street", type="string", length=255, nullable=true)
-     */
+    /** @ORM\Column(type="string", nullable=true) */
     private $street;
 
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="city", type="string", length=255, nullable=true)
-     */
+    /** @ORM\Column(type="string", nullable=true) */
     private $city;
 
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="district", type="string", length=255, nullable=true)
-     */
+    /** @ORM\Column(type="string", nullable=true) */
     private $district;
 
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="county", type="string", length=255, nullable=true)
-     */
+    /** @ORM\Column(type="string", nullable=true) */
     private $county;
 
-    /**
-     * @var int
-     *
-     * @ORM\Column(name="speed", type="integer", nullable=true)
-     */
+    /** @ORM\Column(type="integer", nullable=true) */
     private $speed;
 
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="place_desc", type="text", nullable=true)
+    /** @ORM\Column(name="place_desc", type="text", nullable=true)
      */
     private $placeDesc;
 
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="camera", type="string", length=255, nullable=true)
+    /** @ORM\Column(type="string", nullable=true)
      */
     private $camera;
 
-    /**
-     * @var bool
-     *
-     * @ORM\Column(name="published", nullable=true, type="boolean")
-     */
+    /** @ORM\Column(nullable=true, type="integer") */
     private $published;
 
-    /**
-     * @var \DateTime
-     *
-     * @ORM\Column(name="date", type="datetime")
-     */
+    /** @ORM\Column(type="datetime") */
     private $date;
 
     public function __construct()
@@ -97,248 +55,107 @@ class MeasurePlace
         $this->published = 0;
     }
 
-    /**
-     * Get id
-     *
-     * @return int
-     */
-    public function getId()
+    public function getId(): int
     {
         return $this->id;
     }
 
-    /**
-     * Set roadNumber
-     *
-     * @param string $roadNumber
-     *
-     * @return MeasurePlace
-     */
-    public function setRoadNumber($roadNumber)
+    public function setRoadNumber(string $roadNumber): void
     {
         $this->roadNumber = $roadNumber;
-
-        return $this;
     }
 
-    /**
-     * Get roadNumber
-     *
-     * @return string
-     */
-    public function getRoadNumber()
+    public function getRoadNumber(): string
     {
         return $this->roadNumber;
     }
 
-    /**
-     * Set street
-     *
-     * @param string $street
-     *
-     * @return MeasurePlace
-     */
-    public function setStreet($street)
+    public function setStreet(string $street): void
     {
         $this->street = $street;
-
-        return $this;
     }
 
-    /**
-     * Get street
-     *
-     * @return string
-     */
-    public function getStreet()
+    public function getStreet(): string
     {
         return $this->street;
     }
 
-    /**
-     * Set city
-     *
-     * @param string $city
-     *
-     * @return MeasurePlace
-     */
-    public function setCity($city)
+    public function setCity(string $city): void
     {
         $this->city = $city;
-
-        return $this;
     }
 
-    /**
-     * Get city
-     *
-     * @return string
-     */
-    public function getCity()
+    public function getCity(): string
     {
         return $this->city;
     }
 
-    /**
-     * Set district
-     *
-     * @param string $district
-     *
-     * @return MeasurePlace
-     */
-    public function setDistrict($district)
+    public function setDistrict(string $district): void
     {
         $this->district = $district;
-
-        return $this;
     }
 
-    /**
-     * Get district
-     *
-     * @return string
-     */
-    public function getDistrict()
+    public function getDistrict(): string
     {
         return $this->district;
     }
 
-    /**
-     * Set speed
-     *
-     * @param integer $speed
-     *
-     * @return MeasurePlace
-     */
-    public function setSpeed($speed)
+    public function setSpeed(int $speed): void
     {
         $this->speed = $speed;
-
-        return $this;
     }
 
-    /**
-     * Get speed
-     *
-     * @return int
-     */
-    public function getSpeed()
+    public function getSpeed(): int
     {
         return $this->speed;
     }
 
-    /**
-     * Set placeDesc
-     *
-     * @param string $placeDesc
-     *
-     * @return MeasurePlace
-     */
-    public function setPlaceDesc($placeDesc)
+    public function setPlaceDesc(string $placeDesc): void
     {
         $this->placeDesc = $placeDesc;
-
-        return $this;
     }
 
-    /**
-     * Get placeDesc
-     *
-     * @return string
-     */
-    public function getPlaceDesc()
+    public function getPlaceDesc(): string
     {
         return $this->placeDesc;
     }
 
-    /**
-     * Set camera
-     *
-     * @param string $camera
-     *
-     * @return MeasurePlace
-     */
-    public function setCamera($camera)
+    public function setCamera(string $camera): void
     {
         $this->camera = $camera;
-
-        return $this;
     }
 
-    /**
-     * Get camera
-     *
-     * @return string
-     */
-    public function getCamera()
+    public function getCamera(): string
     {
         return $this->camera;
     }
 
-    /**
-     * Set published
-     *
-     * @param boolean $published
-     *
-     * @return MeasurePlace
-     */
-    public function setPublished($published)
+    public function setPublished(int $published): void
     {
         $this->published = $published;
-
-        return $this;
     }
 
-    /**
-     * Get published
-     *
-     * @return bool
-     */
-    public function isPublished()
+    public function isPublished(): int
     {
         return $this->published;
     }
 
-    /**
-     * Set date
-     *
-     * @param \DateTime $date
-     *
-     * @return MeasurePlace
-     */
-    public function setDate($date)
+    public function setDate(\DateTime $date): void
     {
         $this->date = $date;
-
-        return $this;
     }
 
-    /**
-     * Get date
-     *
-     * @return \DateTime
-     */
-    public function getDate()
+    public function getDate(): \DateTime
     {
         return $this->date;
     }
 
-    /**
-     * @param string $county
-     *
-     * @return MeasurePlace
-     */
-    public function setCounty($county)
+    public function setCounty(string $county): void
     {
         $this->county = $county;
+    }
 
-        return $this;
-}
-
-    /**
-     * @return string
-     */
-    public function getCounty()
+    public function getCounty(): string
     {
         return $this->county;
     }

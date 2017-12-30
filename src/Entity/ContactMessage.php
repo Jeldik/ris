@@ -5,91 +5,45 @@ namespace App\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * ContactMessage
- *
  * @ORM\Table(name="contact_message")
- * @ORM\Entity(repositoryClass="AppBundle\Repository\ContactMessageRepository")
+ * @ORM\Entity(repositoryClass="App\Repository\ContactMessageRepository")
  */
 class ContactMessage
 {
     /**
-     * @var int
-     *
-     * @ORM\Column(name="id", type="integer")
      * @ORM\Id
-     * @ORM\GeneratedValue(strategy="AUTO")
+     * @ORM\GeneratedValue
+     * @ORM\Column(type="integer")
      */
     private $id;
 
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="email", type="string", length=255)
-     */
+    /** @ORM\Column(type="string") */
     private $email;
 
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="message", type="text")
-     */
+    /** @ORM\Column(type="text") */
     private $message;
 
-
-    /**
-     * Get id
-     *
-     * @return int
-     */
-    public function getId()
+    public function getId(): int
     {
         return $this->id;
     }
 
-    /**
-     * Set email
-     *
-     * @param string $email
-     *
-     * @return ContactMessage
-     */
-    public function setEmail($email)
+    public function setEmail(string $email): void
     {
         $this->email = $email;
-
-        return $this;
     }
 
-    /**
-     * Get email
-     *
-     * @return string
-     */
-    public function getEmail()
+    public function getEmail(): string
     {
         return $this->email;
     }
 
-    /**
-     * Set message
-     *
-     * @param string $message
-     *
-     * @return ContactMessage
-     */
-    public function setMessage($message)
+    public function setMessage($message): void
     {
         $this->message = $message;
-
-        return $this;
     }
 
-    /**
-     * Get message
-     *
-     * @return string
-     */
-    public function getMessage()
+    public function getMessage(): string
     {
         return $this->message;
     }
