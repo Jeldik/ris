@@ -16,14 +16,14 @@ use Symfony\Component\Validator\Constraints as Assert;
 class User implements UserInterface, \Serializable
 {
     /**
-     * @ORM\Column(type="integer")
      * @ORM\Id
-     * @ORM\GeneratedValue(strategy="AUTO")
+     * @ORM\GeneratedValue
+     * @ORM\Column(type="integer")
      */
     private $id;
 
     /**
-     * @ORM\Column(type="string", length=50, unique=true)
+     * @ORM\Column(type="string", unique=true)
      * @Assert\NotBlank()
      */
     private $userName;
@@ -35,7 +35,7 @@ class User implements UserInterface, \Serializable
     private $plainPassword;
 
     /**
-     * @ORM\Column(name="password", type="string", length=64)
+     * @ORM\Column(type="string")
      */
     private $password;
 
@@ -47,12 +47,12 @@ class User implements UserInterface, \Serializable
     private $email;
 
     /**
-     * @ORM\Column(name="is_admin", type="boolean")
+     * @ORM\Column(name="is_admin", type="integer")
      */
     private $isAdmin;
 
     /**
-     * @ORM\Column(name="is_active", type="boolean")
+     * @ORM\Column(name="is_active", type="integer")
      */
     private $isActive;
 
@@ -60,40 +60,35 @@ class User implements UserInterface, \Serializable
     public function __construct()
     {
         $this->isActive = true;
-        $this->isAdmin = false;
+        $this->isAdmin  = false;
     }
 
-    /**
-     * @return string
-     */
-    public function getUserName()
+    public function getUserName(): string
     {
         return $this->userName;
     }
 
     public function getSalt()
     {
-        return null;
+        //
     }
 
-    /**
-     * @return string
-     */
-    public function getPassword()
+    public function getPassword(): string
     {
         return $this->password;
     }
 
-    public function getRoles()
+    public function getRoles(): array
     {
         return ['ROLE_USER'];
     }
 
     public function eraseCredentials()
     {
+        //
     }
 
-    public function serialize()
+    public function serialize(): string
     {
         return serialize([
             $this->id,
@@ -104,11 +99,10 @@ class User implements UserInterface, \Serializable
 
     public function unserialize($serialized)
     {
-        list (
+        [
             $this->id,
             $this->userName,
-            $this->password,
-            ) = $this->unserialize($serialized);
+            $this->password,] = $this->unserialize($serialized);
     }
 
     /**
@@ -123,87 +117,52 @@ class User implements UserInterface, \Serializable
         return $this;
     }
 
-    /**
-     * @return int
-     */
-    public function getId()
+    public function getId(): int
     {
         return $this->id;
     }
 
-    /**
-     * @param string $password
-     *
-     * @return User
-     */
-    public function setPassword($password)
+    public function setPassword(string $password)
     {
         $this->password = $password;
-
-        return $this;
     }
 
-
-    /**
-     * @return mixed
-     */
-    public function getIsAdmin()
+    public function getIsAdmin(): int
     {
         return $this->isAdmin;
     }
 
-    /**
-     * @param mixed $isAdmin
-     */
-    public function setIsAdmin($isAdmin)
+    public function setIsAdmin(int $isAdmin)
     {
         $this->isAdmin = $isAdmin;
     }
 
-    /**
-     * @return mixed
-     */
-    public function getIsActive()
+    public function getIsActive(): int
     {
         return $this->isActive;
     }
 
-    /**
-     * @param mixed $isActive
-     */
-    public function setIsActive($isActive)
+    public function setIsActive(int $isActive)
     {
         $this->isActive = $isActive;
     }
 
-    /**
-     * @return mixed
-     */
-    public function getEmail()
+    public function getEmail(): string
     {
         return $this->email;
     }
 
-    /**
-     * @param mixed $email
-     */
-    public function setEmail($email)
+    public function setEmail(string $email)
     {
         $this->email = $email;
     }
 
-    /**
-     * @return mixed
-     */
-    public function getPlainPassword()
+    public function getPlainPassword(): string
     {
         return $this->plainPassword;
     }
 
-    /**
-     * @param mixed $plainPassword
-     */
-    public function setPlainPassword($plainPassword)
+    public function setPlainPassword(string $plainPassword)
     {
         $this->plainPassword = $plainPassword;
     }
