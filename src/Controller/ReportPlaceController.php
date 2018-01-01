@@ -4,11 +4,11 @@ namespace App\Controller;
 
 use App\Entity\MeasurePlace;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
-use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 //use App\Form\MeasurePlaceType;
 
-class ReportPlaceController extends Controller
+class ReportPlaceController extends AbstractController
 {
     /**
      * @Route("/nahlasit-misto", name="reportPlace")
