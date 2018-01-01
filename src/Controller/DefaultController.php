@@ -28,8 +28,8 @@ class DefaultController extends AbstractController
             'description'   => $application->getDescription(),
         ]);*/
 
-        return $this->render('Lucky/number.html.twig', [
-            'number' => $title
+        return $this->render('default.html.twig', [
+            'title' => $title
         ]);
     }
 
