@@ -16,19 +16,11 @@ class ArticleRepository extends EntityRepository
         return $this->findAll();
     }
 
-    /**
-     * @param $url
-     *
-     * @return null|object
-     */
     public function getArticle($url)
     {
         return $this->findOneBy(['url' => $url]);
     }
 
-    /**
-     * @param \AppBundle\Entity\Article $article
-     */
     public function saveArticle(Article $article)
     {
         $this->getEntityManager()->persist($article);
